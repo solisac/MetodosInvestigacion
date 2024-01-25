@@ -61,7 +61,7 @@ public class Aplicacion {
                         Thread.sleep(5 * 1000);
                         break;
                     case 6:
-                        System.out.println("Se selecciono el caso 6");
+                        examen();
                         Thread.sleep(5 * 1000);
                         break;
                     case 7:
@@ -80,4 +80,18 @@ public class Aplicacion {
 
     }
 
+    public static void examen(){
+        Scanner leer= new Scanner(System.in);
+        int acu=0;
+        System.out.println("El metdo inductivo es aquel q se usa comunmente\n1.- si \n2.- no");
+        int n1=leer.nextInt();
+        if(n1==1)
+            acu+=1;
+         System.out.println("El metdo deductivo es aquel q se usa comunmente\n1.- si \n2.- no");
+        int n2=leer.nextInt();
+        if(n2==2)
+            acu+=1;
+        
+        System.out.println("la nota final es: "+acu);
+    }
 }
